@@ -11,12 +11,12 @@ Add the `rise_symbols.tex` file to your LaTeX project and use the `\include{rise
 To use the symbol as a superscript in a math environment simply use the two new commands as follows:
 
 ```latex
-t^{\trianglepafillhlsup}
+$ t^{\trianglepafillhlsup} $
 
-t^{\trianglepafillhrsup}
+$ t^{\trianglepafillhrsup} $
 ```
 
-The unfilled triangle, that represents the rise itself is not defined by this file, since a corresponding `\vartriangle` symbol exists in the AMS math package. The rise of a transition should therefore be defined as follows:
+The unfilled triangle, that represents the rise itself, is not defined by this file, since a corresponding `\vartriangle` symbol exists in the AMS math package. The rise of a transition should therefore be defined as follows:
 
 ```latex
 The rise $t^\vartriangle$ of a transition $t$ is $t^\vartriangle = t^{\trianglepafillhrsup} - t^{\trianglepafillhlsup}$
@@ -24,9 +24,9 @@ The rise $t^\vartriangle$ of a transition $t$ is $t^\vartriangle = t^{\trianglep
 
 ## Other options
 
-The [oPlotSymbl](https://ctan.org/pkg/oplotsymbl?lang=en) LaTeX package defines half-filled triangle symbols. Our commands use the same naming schema, but add the `sup` suffix to denote the superscript. The symbols defined by this package can be used, but don't look good as superscript in our opinion.
+The [oPlotSymbl](https://ctan.org/pkg/oplotsymbl?lang=en) LaTeX package defines half-filled triangle symbols. Our commands use the same naming scheme, and adds the `sup` suffix to denote the superscript. The symbols defined by this package can be used instead, but don't look good as superscript in our opinion.
 
-Do note that our commands don't render correctly outside of superscript! Should you need to use a half-filled triangle anywhere else, we recommend the oPlotSymbl package and their `\trianglepafillhl` and `\trianglepafillhl` commands.
+Do note that our commands don't render correctly if not used as superscripts! Should you need to use a half-filled triangle anywhere else, we recommend the oPlotSymbl package and their `\trianglepafillhl` and `\trianglepafillhl` commands.
 
 ## Contributing to the repository
 
