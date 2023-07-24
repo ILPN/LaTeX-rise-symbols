@@ -2,7 +2,7 @@
 
 This small repository contains a LaTeX file, that defines two commands based on the [AMS math](https://ctan.org/pkg/amsmath?lang=en) LaTeX package.
 
-The newly defined commands allow you to use a left/right half-filled triangle as a superscript symbol. These symbols were used in the [Token Trail Semantics – Modeling Behavior of Petri Nets with Labeled Petri Nets](https://link.springer.com/chapter/10.1007/978-3-031-33620-1_16) paper to define the rise of a transition (Definition 6).
+The newly defined commands allow you to use a left/right half-filled triangle as a superscript symbol. These symbols were used in the [Token Trail Semantics – Modeling Behavior of Petri Nets with Labeled Petri Nets](https://link.springer.com/chapter/10.1007/978-3-031-33620-1_16) paper to define the rise of a transition (Definition 4).
 
 ## How to use
 
