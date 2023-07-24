@@ -1,0 +1,45 @@
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{trimclip}
+
+% created analogous to https://tex.stackexchange.com/questions/320116/half-overlap-two-symbols-from-amssymb
+
+\makeatletter
+\@ifdefinable{\trianglepafillhlsup}{
+  \@ifdefinable{\@trianglepafillhlsup}{
+    \protected\def\trianglepafillhlsup{
+      \mathrel{
+        \mathpalette\@trianglepafillhlsup{}
+      }
+    }
+    \def\@trianglepafillhlsup#1#2{
+      % #1: math style
+      % #2: unused
+      \mathrlap{
+        \clipbox{0 0 {.49\width} 0}{$#1\blacktriangle\m@th$}
+      }
+      \vartriangle
+    }
+  }
+}
+\makeatother
+
+\makeatletter
+\@ifdefinable{\trianglepafillhrsup}{
+  \@ifdefinable{\@trianglepafillhrsup}{
+    \protected\def\trianglepafillhrsup{
+      \mathrel{
+        \mathpalette\@trianglepafillhrsup{}
+      }
+    }
+    \def\@trianglepafillhrsup#1#2{
+      % #1: math style
+      % #2: unused
+      \vartriangle
+      \mathllap{
+        \clipbox{{.49\width} 0 0 0}{$#1\blacktriangle\m@th$}
+      }
+    }
+  }
+}
+\makeatother
