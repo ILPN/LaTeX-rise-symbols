@@ -26,7 +26,7 @@ The rise $t^\vartriangle(m)$ of a transition $t$ in a marking $m$ is $t^\vartria
 
 The [oPlotSymbl](https://ctan.org/pkg/oplotsymbl?lang=en) LaTeX package defines half-filled triangle symbols. Our package uses the same naming scheme, and adds the `sup` suffix to denote the superscript. The symbols defined by the oPlotSymbl package can be used instead, but don't look good as superscript in our opinion.
 
-Do note the symbols declared in our package don't render correctly if not used as superscripts! Should you need to use a half-filled triangle anywhere else, we recommend the oPlotSymbl package and their `\trianglepafillhl` and `\trianglepafillhr` commands.
+Note, the symbols declared in our package don't render correctly if not used as superscripts! Should you need to use a half-filled triangle anywhere else, we recommend the oPlotSymbl package and their `\trianglepafillhl` and `\trianglepafillhr` commands.
 
 ## Contributing to the repository
 
